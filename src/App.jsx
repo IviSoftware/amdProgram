@@ -21,15 +21,20 @@ function App() {
   return (
     <>
         <section className='w-full flex justify-center items-center gap-5 mb-5 mt-2'>
-            <BtnMenu type="congreso" setSectionState={setSectionState}>Curso para médicos generales</BtnMenu>
-            <BtnMenu type="pre" setSectionState={setSectionState}>Pre-Congreso</BtnMenu>
-          
+            <div>
+              <BtnMenu type="congreso" setSectionState={setSectionState}>Curso para médicos generales</BtnMenu>
+             <h3 className={`mb-4 mt-6 text-center ${section === 'curso' ? 'opacity-1' : 'opacity-0'}`}><b>8 DE ABRIL</b></h3>  
+            </div>
+            <div>
+              <BtnMenu type="pre" setSectionState={setSectionState}>Pre-Congreso</BtnMenu>
+              <h3 className={`mb-4 mt-6 text-center ${section === 'pre-congreso' ? 'opacity-1' : 'opacity-0'}`}><b>9 DE ABRIL</b></h3>
+            </div>
         </section>
         
 
         <div className='w-full flex flex-col items-center'>
         {section === 'curso' && <>
-              <h3 className='text-center mb-4'><b>8 DE ABRIL</b></h3>
+              
               <section className='grid grid-cols-1 grid-rows-7 gap-5 md:w-3/5 '>
                 <div className='bg-custom-blue p-5'><h2 className='text-white text-center'>CENTRO DE CONVENCIONES Y AUDITORIO CINIA GONZÁLEZ DIEZ, HOSPITAL ESPAÑOL </h2></div>
                 <RowTable hour="9:00 AM - 09:30 AM" doctor="Dra. Alejandra Rosales " theme="HISTORIA CLÍNICA" />
@@ -50,7 +55,6 @@ function App() {
         </> } 
 
         {section === 'pre-congreso' && <>
-            <h3 className='text-center mb-4'><b>9 DE ABRIL</b></h3>
             <section className='grid grid-cols-1 grid-rows-8 gap-5 md:w-3/5 '>
                 <div className='bg-custom-blue p-5'><h2 className='text-white text-center'>CENTRO DE CONVENCIONES Y AUDITORIO CINIA GONZÁLEZ DIEZ, HOSPITAL ESPAÑOL </h2></div>
                 <RowTable hour="9:00 AM - 9:30 AM" doctor="Dr. Francisco Pérez Atamoroz" theme="TOXINA BOTULÍNICA" />
