@@ -10,7 +10,7 @@ const sectionsEnum = {
 
 function App() {
 
-  const [sectionState,setSectionState] = useState(false)
+  const [sectionState,setSectionState] = useState(true)
   const [section,setSection] = useState(sectionsEnum[2])
 
   useEffect(()=>{
