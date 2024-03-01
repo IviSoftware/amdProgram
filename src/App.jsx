@@ -19,15 +19,15 @@ function App() {
     <>
         <section className='w-full flex justify-center items-center gap-5 mb-5 mt-2'>
             <div>
-              <BtnMenu type="congreso" setSectionState={setSectionState}>Curso para médicos generales</BtnMenu>
+              <BtnMenu type="curso" setSectionState={setSectionState} sectionState={sectionState}>Curso para médicos generales</BtnMenu>
              <h3 className={`mb-4 mt-6 text-center ${sectionState === 'curso' ? 'opacity-1' : 'opacity-0'}`}><b>8 DE ABRIL</b></h3>  
             </div>
             <div>
-              <BtnMenu type="pre" setSectionState={setSectionState}>Pre-Congreso</BtnMenu>
+              <BtnMenu type="pre" setSectionState={setSectionState} sectionState={sectionState}>Pre-Congreso</BtnMenu>
               <h3 className={`mb-4 mt-6 text-center ${sectionState === 'pre' ? 'opacity-1' : 'opacity-0'}`}><b>9 DE ABRIL</b></h3>
             </div>
             <div>
-              <BtnMenu type="courseDays" setSectionState={setSectionState}>Congreso</BtnMenu>
+              <BtnMenu type="cursoDias" setSectionState={setSectionState} sectionState={sectionState}>Congreso</BtnMenu>
               <h3 className={`mb-4 mt-6 text-center ${sectionState === '' ? 'opacity-0' : 'opacity-0'}`}><b>10 DE ABRIL</b></h3>
             </div>
         </section>

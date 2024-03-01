@@ -8,15 +8,15 @@ function Abril12Programa({setSalon,salon}) {
     <>
      <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Centro de convenciones, Expo Santa Fé</h2></div>
               <div className='flex w-full justify-center gap-10'>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Salon 1</b></h3>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salon 2</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Salón 1</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salón 2</b></h3>
                 
               </div>
 
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Trabajos premiados de residentes </h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 mb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 mt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Trabajos premiados de residentes </h2></div>
                 
                   <ContainerRows rows={4}>
                       <RowTable hour="11:10 AM - 11:30AM" doctor="Ruth María Amanda Márquez Muciño" theme="Lesión verrugosa lineal en paciente pediátrico" />
@@ -42,8 +42,8 @@ function Abril12Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 2 */}
                 {salon === 'salon2' && <>
-                <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
+                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="9:00 AM - 9:20 AM" doctor="Dr. Eduardo Marín" theme="Virus, vacunas y piel" />
                     <RowTable hour="9:20 AM - 09:40 AM" doctor="Dr. Luis Méndez" theme="Salud mental en el paciente dermatológico" />

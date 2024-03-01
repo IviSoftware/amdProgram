@@ -8,15 +8,15 @@ function Abril10Programa({setSalon,salon}) {
     <>
      <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Centro de convenciones, Expo Santa Fé</h2></div>
               <div className='flex w-full justify-center gap-10'>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Salon 1</b></h3>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salon 2</b></h3>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon3' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon3')}><b>Salon 3</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Salón 1</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salón 2</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon3' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon3')}><b>Salón 3</b></h3>
               </div>
 
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Dermatología pediátrica </h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Dermatología pediátrica </h2></div>
                   <ContainerRows rows={4}>
                     <RowTable hour="9:00 AM - 09:40 AM" doctor="Dra. Désirée Larenas" theme="Guidamex. Guía mexicana de la dermatitis atópica" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dra. Adriana Valencia Herrera" theme="LESIONES ELEMENTALES" />
@@ -61,8 +61,8 @@ function Abril10Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 2 */}
                 {salon === 'salon2' && <>
-                <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cosmética</h2></div>
+                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cosmética</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Miriam Neri" theme="Enzimas recombinantes de nueva generación en dermatología" />
                     <RowTable hour="11:30 AM - 11:50 AM" doctor="Dra. Gabriela Ortega" theme="Peelings de la A a la Z" />
@@ -103,8 +103,8 @@ function Abril10Programa({setSalon,salon}) {
 
                 {/* inicia Salon 3 */}
                 {salon === 'salon3' && <>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Inmunología</h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Inmunología</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="9:00 AM - 9:20 AM" doctor="Dra. Alicia Lemini" theme="Dermatitis atópica y su aspecto clínico molecular" />
                     <RowTable hour="9:20 AM - 09:40 AM" doctor="Dra. Erika Alvarado" theme="Abordaje práctico de las dermatosis ampollosas" />

@@ -8,15 +8,15 @@ function Abril11Programa({setSalon,salon}) {
     <>
      <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Centro de convenciones, Expo Santa Fé</h2></div>
               <div className='flex w-full justify-center gap-10'>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Salon 1</b></h3>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salon 2</b></h3>
-                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon3' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon3')}><b>Salon 3</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Salón 1</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salón 2</b></h3>
+                <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon3' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon3')}><b>Salón 3</b></h3>
               </div>
 
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Dermatitis Atópica </h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Dermatitis Atópica </h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="9:00 AM - 9:20 AM" doctor="Dr. Pfizer" theme="" />
                     <RowTable hour="9:20 AM - 09:40 AM" doctor="Dr. Pfizer" theme="" />
@@ -59,8 +59,8 @@ function Abril11Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 2 */}
                 {salon === 'salon2' && <>
-                <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
+                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="9:00 AM - 9:20 AM" doctor="Dra. Alejandra Rosales" theme="Efecto de la dieta en las enfermedades dermatológicas" />
                     <RowTable hour="9:20 AM - 09:40 AM" doctor="Dr. Christopher Ruben Castillo" theme="Escleroterapia: Lo que tienes que saber" />
@@ -113,8 +113,8 @@ function Abril11Programa({setSalon,salon}) {
 
                 {/* inicia Salon 3 */}
                 {salon === 'salon3' && <>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Enfermedades de pelo</h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Enfermedades de pelo</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="9:00 AM - 9:20 AM" doctor="Dr. Hugo Vicente Martínez" theme="Daño capilar por el medio ambiente" />
                     <RowTable hour="9:20 AM - 09:40 AM" doctor="Dra. Cristina Serrano Falcón" theme="¿Qué hay de nuevo en hirsutismo? (Zoom)" />
