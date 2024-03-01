@@ -27,7 +27,7 @@ function App() {
               <h3 className={`mb-4 mt-6 text-center ${sectionState === 'pre' ? 'opacity-1' : 'opacity-0'}`}><b>9 DE ABRIL</b></h3>
             </div>
             <div>
-              <BtnMenu type="courseDays" setSectionState={setSectionState}>Curso</BtnMenu>
+              <BtnMenu type="courseDays" setSectionState={setSectionState}>Congreso</BtnMenu>
               <h3 className={`mb-4 mt-6 text-center ${sectionState === '' ? 'opacity-0' : 'opacity-0'}`}><b>10 DE ABRIL</b></h3>
             </div>
         </section>
