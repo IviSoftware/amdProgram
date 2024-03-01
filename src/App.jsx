@@ -1,79 +1,80 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import {RowTable} from './assets/Components/RowTable'
-import { BtnMenu } from './assets/Components/BtnMenu'
+import { useState} from 'react';
+import './App.css';
+import { BtnMenu } from './assets/Components/BtnMenu';
+import { PreCongreso } from './assets/Elements/PreCongreso';
+import { CursoDoctores } from './assets/Elements/CursoDoctores';
+import {Abril10Programa} from './assets/Elements/Abril10Programa';
+import { Abril11Programa } from './assets/Elements/Abril11Programa';
+import {Abril12Programa} from './assets/Elements/Abril12Programa';
 
-const sectionsEnum = {
-  1: 'pre-congreso',
-  2: 'curso',
-}
+
 
 function App() {
 
-  const [sectionState,setSectionState] = useState(true)
-  const [section,setSection] = useState(sectionsEnum[2])
-
-  useEffect(()=>{
-    setSection(sectionsEnum[sectionState ? 2 : 1])
-  },[sectionState])
-
+  const [sectionState,setSectionState] = useState('curso')
+  const [dayCourse,setDayCourse] = useState('10 DE ABRIL')
+  const [salon,setSalon] = useState('salon1')
 
   return (
     <>
         <section className='w-full flex justify-center items-center gap-5 mb-5 mt-2'>
             <div>
               <BtnMenu type="congreso" setSectionState={setSectionState}>Curso para médicos generales</BtnMenu>
-             <h3 className={`mb-4 mt-6 text-center ${section === 'curso' ? 'opacity-1' : 'opacity-0'}`}><b>8 DE ABRIL</b></h3>  
+             <h3 className={`mb-4 mt-6 text-center ${sectionState === 'curso' ? 'opacity-1' : 'opacity-0'}`}><b>8 DE ABRIL</b></h3>  
             </div>
             <div>
               <BtnMenu type="pre" setSectionState={setSectionState}>Pre-Congreso</BtnMenu>
-              <h3 className={`mb-4 mt-6 text-center ${section === 'pre-congreso' ? 'opacity-1' : 'opacity-0'}`}><b>9 DE ABRIL</b></h3>
+              <h3 className={`mb-4 mt-6 text-center ${sectionState === 'pre' ? 'opacity-1' : 'opacity-0'}`}><b>9 DE ABRIL</b></h3>
+            </div>
+            <div>
+              <BtnMenu type="courseDays" setSectionState={setSectionState}>Curso</BtnMenu>
+              <h3 className={`mb-4 mt-6 text-center ${sectionState === '' ? 'opacity-0' : 'opacity-0'}`}><b>10 DE ABRIL</b></h3>
             </div>
         </section>
-        
+
+        {sectionState === 'cursoDias' && <section className='flex w-full justify-center gap-10'>
+              
+              <h3 className={`
+                mb-2 mt-0 text-center cursor-pointer ${dayCourse === '10 DE ABRIL' && 'text-blue-secondary'} ${sectionState === 'cursoDias' ? 'block' : 'hidden'}`} 
+              onClick={()=>{
+                setDayCourse("10 DE ABRIL")
+                setSalon('salon1')
+              }}>
+                <b>10 DE ABRIL</b>
+              </h3>
+              <h3 className={`
+                mb-2 mt-0 text-center cursor-pointer ${dayCourse === '11 DE ABRIL' && 'text-blue-secondary'} ${sectionState === 'cursoDias' ? 'block' : 'hidden'}`} 
+              onClick={()=>{
+                setDayCourse("11 DE ABRIL")
+                setSalon('salon1')
+                }}>
+                <b>11 DE ABRIL</b>
+              </h3>
+              <h3 className={`
+                mb-2 mt-0 text-center cursor-pointer ${dayCourse === '12 DE ABRIL' && 'text-blue-secondary'} ${sectionState === 'cursoDias' ? 'block' : 'hidden'}`} 
+              onClick={()=>{
+                setDayCourse("12 DE ABRIL")
+                setSalon('salon1')
+                }}>
+                <b>12 DE ABRIL</b>
+              </h3>
+              
+        </section>}
 
         <div className='w-full flex flex-col items-center'>
-        {section === 'curso' && <>
-              
-        <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>CENTRO DE CONVENCIONES Y AUDITORIO CINIA GONZÁLEZ DIEZ, HOSPITAL ESPAÑOL </h2></div>
-              <section className='grid grid-cols-1 grid-rows-7 gap-4 md:w-3/5 '>
-                <RowTable hour="9:00 AM - 09:30 AM" doctor="Dra. Alejandra Rosales " theme="HISTORIA CLÍNICA" />
-                <RowTable hour="9:30 AM - 10:00 AM" doctor="Dra. Gabriela Ortega" theme="LESIONES ELEMENTALES" />
-                <RowTable hour="10:00 AM - 10:30 AM" doctor="Dra. Rebeca Rodríguez" theme="ACNÉ" />
-                <RowTable hour="10:30AM - 11:00 AM" doctor="Dra. Susana Canalizo" theme="DERMATITIS ATÓPICA" />
-                <RowTable hour="11:00 AM - 11:30 AM" doctor="Dra. Alejandra Rosales" theme="MELASMA" />
-                <RowTable hour="11:30AM - 12:00 AM" doctor="Dra. Gabriela Ortega" theme="FARMACODERMIAS" />
-              </section>
-              <div className='bg-custom-blue md:rounded-full
-              w-full md:w-3/5 flex flex-col items-center gap-4 mb-2 mt-2 md:grid md:grid-cols-3 md:justify-items-start md:p-5'><p className='text-white'>12:00 PM - 01:00 PM</p><h2 className='text-white text-center'>COMIDA</h2></div>
-              <section className='grid grid-cols-1 grid-rows-4 gap-4 md:w-3/5 mt-8'>
-                  <RowTable hour="01:00 PM - 01:30 PM" doctor="Dra. Rebeca Rodríguez" theme="FOTOPROTECCIÓN" />
-                  <RowTable hour="01:30PM - 02:00 PM" doctor="Dra. Susana Canalizo"  theme="CORTICOESTROPEO" />
-                  <RowTable hour="02:00 PM - 02:30 PM" doctor="Dra. Alejandra Rosales" theme="URTICARIA" />
-                  <RowTable hour="02:30 PM - 03:00 PM" doctor="Dra. Gabriela Ortega" theme="PRURIGO" />
-              </section>
-        </> } 
+        {sectionState === 'curso' && <CursoDoctores /> } 
 
-        {section === 'pre-congreso' && <>
-            <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>CENTRO DE CONVENCIONES Y AUDITORIO CINIA GONZÁLEZ DIEZ, HOSPITAL ESPAÑOL </h2></div>
-            <section className='grid grid-cols-1 grid-rows-3 gap-4 md:w-3/5 '>
-                <RowTable hour="9:00 AM - 9:30 AM" doctor="Dr. Francisco Pérez Atamoroz" theme="TOXINA BOTULÍNICA" />
-                <RowTable hour="9:30 AM - 9:45 AM" doctor={["Preguntas y respuestas", <br />, "Dr. Francisco Pérez Atamoros"]}   />
-                <RowTable hour="9:45 AM - 10:15 AM" doctor="Dr. José Luis López Estebaranz" theme="RELLENOS" />
-                <RowTable hour="10:15 AM - 10:30 AM" doctor={["Preguntas y respuestas",<br />,"Dr. José Luis López Estebaranz"]} />
-                <RowTable hour="10:30 AM - 11:15 AM" doctor="Dr. Diego del Ojo" theme="HIDROXIPATITA" />
-                <RowTable hour="11:15 AM - 11:30 AM" doctor={["Preguntas y respuestas",<br/>,"Dr. Diego del Ojo"]} />
-                <RowTable hour="11:30 PM - 12:00 PM" doctor="Mesa redonda"  />
-            </section>
+        {sectionState === 'pre' && <PreCongreso /> } 
 
-            <div className='bg-custom-blue md:rounded-full mb-6 mt-6 p-2 w-full md:w-3/5 flex flex-col items-center gap-2 md:grid md:grid-cols-3 md:justify-items-start md:p-5'><p className='text-white'>12:00 PM - 01:00 PM</p><h2 className='text-white text-center'>COMIDA</h2></div>
-            
-            <section className='grid grid-cols-1 grid-rows-3 gap-4 md:w-3/5 mt-8'>
-                <RowTable hour="01:00 PM - 2:00 PM" doctor="Dr. Francisco Pérez Atamoroz" theme="PRÁCTICA" />
-                <RowTable hour="2:00 PM - 03:00 PM" doctor="Dr. José Luis López Estebaranz"  theme="PRÁCTICA" />
-                <RowTable hour="03:00 PM - 04:00 PM" doctor="Dr. Francisco Pérez Atamoroz" theme="PRÁCTICA" />
-            </section>
-        </> } 
+        <div className='w-full flex flex-col items-center'>
+        {dayCourse === '10 DE ABRIL' && sectionState === 'cursoDias' && <Abril10Programa setSalon={setSalon} salon={salon} />}
+
+        {dayCourse === '11 DE ABRIL' && sectionState === 'cursoDias' && <Abril11Programa setSalon={setSalon} salon={salon} />}
+        
+        {dayCourse === '12 DE ABRIL' && sectionState === 'cursoDias' && <Abril12Programa setSalon={setSalon} salon={salon} />}
+        </div>
+
+        
         </div>
     </>
   )
