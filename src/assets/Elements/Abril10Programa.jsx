@@ -16,12 +16,12 @@ function Abril10Programa({setSalon,salon}) {
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
                   <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
-                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Dermatología pediátrica </h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Dermatología pediátrica </h2></div>
                   <ContainerRows rows={4}>
                     <RowTable hour="9:00 AM - 09:40 AM" doctor="Dra. Désirée Larenas" theme="Guidamex. Guía mexicana de la dermatitis atópica" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dra. Adriana Valencia Herrera" theme="LESIONES ELEMENTALES" />
-                    <RowTable hour="10:00 AM - 10:20 PM" doctor="Dra. Mirna Toledo Bahena" theme="Comorbilidades en psoriasis infantil" />
-                    <RowTable hour="10:20AM - 10:40 AM" doctor="Dr. Héctor Carrillo" theme="Lesiones post covid en menores" />
+                    <RowTable hour="10:00 AM - 10:20 AM" doctor="Dra. Mirna Toledo Bahena" theme="Comorbilidades en psoriasis infantil" />
+                    <RowTable hour="10:20 AM - 10:40 AM" doctor="Dr. Héctor Carrillo" theme="Lesiones post covid en menores" />
                   </ContainerRows>
           
                   <Receso hour="10:40 AM - 11:10 AM" />

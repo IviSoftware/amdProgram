@@ -16,7 +16,7 @@ function Abril12Programa({setSalon,salon}) {
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
                   <div className='bg-custom-blue p-5 pb-0 mb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
-                  <div className='bg-custom-blue p-5 pt-0 mt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Trabajos premiados de residentes </h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 mt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Trabajos premiados de residentes </h2></div>
                 
                   <ContainerRows rows={4}>
                       <RowTable hour="11:10 AM - 11:30AM" doctor="Ruth María Amanda Márquez Muciño" theme="Lesión verrugosa lineal en paciente pediátrico" />

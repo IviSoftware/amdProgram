@@ -12,7 +12,7 @@ function PreCongreso() {
         <RowTable hour="10:15 AM - 10:30 AM" doctor={["Preguntas y respuestas",<br />,"Dr. José Luis López Estebaranz"]} />
         <RowTable hour="10:30 AM - 11:15 AM" doctor="Dr. Diego del Ojo" theme="HIDROXIPATITA" />
         <RowTable hour="11:15 AM - 11:30 AM" doctor={["Preguntas y respuestas",<br/>,"Dr. Diego del Ojo"]} />
-        <RowTable hour="11:30 PM - 12:00 PM" doctor="Mesa redonda"  />
+        <RowTable hour="11:30 AM - 12:00 PM" doctor="Mesa redonda"  />
     </ContainerRows>
 
     <div className='bg-custom-blue md:rounded-full mb-6 mt-6 p-2 w-full md:w-3/5 flex flex-col items-center gap-2 md:grid md:grid-cols-3 md:justify-items-start md:p-5'><p className='text-white'>12:00 PM - 01:00 PM</p><h2 className='text-white text-center'>COMIDA</h2></div>
