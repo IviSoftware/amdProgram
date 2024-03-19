@@ -18,8 +18,8 @@ function Abril11Programa({setSalon,salon}) {
                   <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO:Dermatitis Atópica </h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="9:00 AM - 9:20 AM" doctor="Dr. Pfizer" theme="" />
-                    <RowTable hour="9:20 AM - 09:40 AM" doctor="Dr. Pfizer" theme="" />
+                    <RowTable hour="09:00 AM - 9:20 AM" doctor="Dr. Pfizer" theme="" />
+                    <RowTable hour="09:20 AM - 09:40 AM" doctor="Dr. Pfizer" theme="" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dr. Dubai" theme="" />
                     <RowTable hour="10:00 AM - 10:20 AM" doctor="" theme="" />
                     <RowTable hour="10:20 AM - 10:40 AM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
@@ -62,8 +62,8 @@ function Abril11Programa({setSalon,salon}) {
                 <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="9:00 AM - 9:20 AM" doctor="Dra. Alejandra Rosales" theme="Efecto de la dieta en las enfermedades dermatológicas" />
-                    <RowTable hour="9:20 AM - 09:40 AM" doctor="Dr. Christopher Ruben Castillo" theme="Escleroterapia: Lo que tienes que saber" />
+                    <RowTable hour="09:00 AM - 9:20 AM" doctor="Dra. Alejandra Rosales" theme="Efecto de la dieta en las enfermedades dermatológicas" />
+                    <RowTable hour="09:20 AM - 09:40 AM" doctor="Dr. Christopher Ruben Castillo" theme="Escleroterapia: Lo que tienes que saber" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dra. Rosario García Salazar" theme="Tratamiento de prurito en dermatitis atópica" />
                     <RowTable hour="10:00 AM - 10:20 AM" doctor="Dr. Alejandro Sosa Caballero" theme="Efecto de los disruptores endocrinos en dermatología" />
                     <RowTable hour="10:20 AM - 10:40 AM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
@@ -116,8 +116,8 @@ function Abril11Programa({setSalon,salon}) {
                   <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Enfermedades de pelo</h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="9:00 AM - 9:20 AM" doctor="Dr. Hugo Vicente Martínez" theme="Daño capilar por el medio ambiente" />
-                    <RowTable hour="9:20 AM - 09:40 AM" doctor="Dra. Cristina Serrano Falcón" theme="¿Qué hay de nuevo en hirsutismo? (Zoom)" />
+                    <RowTable hour="09:00 AM - 9:20 AM" doctor="Dr. Hugo Vicente Martínez" theme="Daño capilar por el medio ambiente" />
+                    <RowTable hour="09:20 AM - 09:40 AM" doctor="Dra. Cristina Serrano Falcón" theme="¿Qué hay de nuevo en hirsutismo? (Zoom)" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dra. Sonia Ocampo Garza" theme="Nuevos tratamientos en alopecia androgenética" />
                     <RowTable hour="10:00 AM - 10:20 AM" doctor="Dra. Rosa María Ponce" theme="Usos del zinc en dermatología" />
                     <RowTable hour="10:20 AM - 10:40 AM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
@@ -136,7 +136,7 @@ function Abril11Programa({setSalon,salon}) {
 
                   <Receso hour="12:50 PM - 1:20 PM" />
 
-                  <Receso hour="4:50 PM - " title="Cena de Clausura" />
+                  <Receso hour="04:50 PM - " title="Cena de Clausura" />
              
                   
                 </>}

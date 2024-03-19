@@ -18,7 +18,7 @@ function Abril10Programa({setSalon,salon}) {
                   <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Dermatología pediátrica </h2></div>
                   <ContainerRows rows={4}>
-                    <RowTable hour="9:00 AM - 09:40 AM" doctor="Dra. Désirée Larenas" theme="Guidamex. Guía mexicana de la dermatitis atópica" />
+                    <RowTable hour="09:00 AM - 09:40 AM" doctor="Dra. Désirée Larenas" theme="Guidamex. Guía mexicana de la dermatitis atópica" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dra. Adriana Valencia Herrera" theme="LESIONES ELEMENTALES" />
                     <RowTable hour="10:00 AM - 10:20 AM" doctor="Dra. Mirna Toledo Bahena" theme="Comorbilidades en psoriasis infantil" />
                     <RowTable hour="10:20 AM - 10:40 AM" doctor="Dr. Héctor Carrillo" theme="Lesiones post covid en menores" />
@@ -75,25 +75,25 @@ function Abril10Programa({setSalon,salon}) {
                   
                   <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="1:20 PM - 1:40 PM" doctor="Dra. Mariela del Ángel" theme="Respuesta  clínica a tratamiento convencional de pacientes con hidradenitis y eritrasma" />
-                    <RowTable hour="1:40 PM - 2:00 PM" doctor="Dr. Jorge Lauro Moreno González" theme="Escleroterapia: Técnica de aplicación" />
-                    <RowTable hour="2:00 PM - 2:20 PM" doctor="Dra. Helena Vidaurri" theme="Diagnóstico diferencial de eritrodermia neonatal" />
-                    <RowTable hour="2:20 PM - 2:40 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Casos y actualidades de hiperqueratosis circunscrita" />
-                    <RowTable hour="2:40 PM - 3:00 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
+                    <RowTable hour="01:20 PM - 01:40 PM" doctor="Dra. Mariela del Ángel" theme="Respuesta  clínica a tratamiento convencional de pacientes con hidradenitis y eritrasma" />
+                    <RowTable hour="01:40 PM - 02:00 PM" doctor="Dr. Jorge Lauro Moreno González" theme="Escleroterapia: Técnica de aplicación" />
+                    <RowTable hour="02:00 PM - 02:20 PM" doctor="Dra. Helena Vidaurri" theme="Diagnóstico diferencial de eritrodermia neonatal" />
+                    <RowTable hour="02:20 PM - 02:40 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Casos y actualidades de hiperqueratosis circunscrita" />
+                    <RowTable hour="02:40 PM - 03:00 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
                   </ContainerRows>
 
-                  <Receso hour="3:00 PM - 3:30 PM" />
+                  <Receso hour="03:00 PM - 03:30 PM" />
 
                   <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cirugía dermatológica </h2></div>
                   <ContainerRows rows={3}>
-                    <RowTable hour="3:30 PM - 3:50 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Cirugía reconstructiva compleja de oreja" />
-                    <RowTable hour="3:50 PM - 4:10 PM" doctor="Dr. Juan Antonio Vázquez Velo" theme="Hidradenitis supurativa, abordaje quirúrgico" />
-                    <RowTable hour="4:10 PM - 4:30 PM" doctor="Dr. José Enrique Hernández Pérez" theme="Liposowing: Efectividad en transplante de grasa" /> 
+                    <RowTable hour="03:30 PM - 03:50 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Cirugía reconstructiva compleja de oreja" />
+                    <RowTable hour="03:50 PM - 04:10 PM" doctor="Dr. Juan Antonio Vázquez Velo" theme="Hidradenitis supurativa, abordaje quirúrgico" />
+                    <RowTable hour="04:10 PM - 04:30 PM" doctor="Dr. José Enrique Hernández Pérez" theme="Liposowing: Efectividad en transplante de grasa" /> 
                   </ContainerRows>
 
-                  <Receso hour="4:30 PM - 5:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
+                  <Receso hour="04:30 PM - 05:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
                   <ContainerRows rows={2}>
-                    <RowTable hour="5:00 PM - 07:50 PM" doctor="" theme="Cóctel de bienvenida Cantabria" />
+                    <RowTable hour="05:00 PM - 07:50 PM" doctor="" theme="Cóctel de bienvenida Cantabria" />
                     <RowTable hour="08:30 PM - 10:00 PM" doctor="" theme="Cena de profesores" />
                   </ContainerRows>
                 
@@ -106,8 +106,8 @@ function Abril10Programa({setSalon,salon}) {
                   <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Inmunología</h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="9:00 AM - 9:20 AM" doctor="Dra. Alicia Lemini" theme="Dermatitis atópica y su aspecto clínico molecular" />
-                    <RowTable hour="9:20 AM - 09:40 AM" doctor="Dra. Erika Alvarado" theme="Abordaje práctico de las dermatosis ampollosas" />
+                    <RowTable hour="09:00 AM - 09:20 AM" doctor="Dra. Alicia Lemini" theme="Dermatitis atópica y su aspecto clínico molecular" />
+                    <RowTable hour="09:20 AM - 09:40 AM" doctor="Dra. Erika Alvarado" theme="Abordaje práctico de las dermatosis ampollosas" />
                     <RowTable hour="09:40 AM - 10:00 AM" doctor="Dr. Víctor Hernández Bautista" theme="Uso clínico de gammaglobulina intravenosa en dermatología" />
                     <RowTable hour="10:00 AM - 10:20 AM" doctor="Dr. Roberto Blancas" theme="Dermatitis de manos y pies" />
                     <RowTable hour="10:20 AM - 10:40 AM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
@@ -124,10 +124,10 @@ function Abril10Programa({setSalon,salon}) {
                     <RowTable hour="12:30 PM - 12:50 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
                   </ContainerRows>
 
-                  <Receso hour="12:50 PM - 1:20 PM" />
-                  <Receso hour="4:30 PM - 5:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
+                  <Receso hour="12:50 PM - 01:20 PM" />
+                  <Receso hour="04:30 PM - 05:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
                   <ContainerRows rows={2}>
-                    <RowTable hour="5:00 PM - 07:50 PM" doctor="" theme="Bienvenida " />
+                    <RowTable hour="05:00 PM - 07:50 PM" doctor="" theme="Bienvenida " />
                     <RowTable hour="08:30 PM - 10:00 PM" doctor="" theme="Cena de profesores" />
                   </ContainerRows>
                   
