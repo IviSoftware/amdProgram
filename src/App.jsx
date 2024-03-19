@@ -11,17 +11,13 @@ import {Abril12Programa} from './assets/Elements/Abril12Programa';
 
 function App() {
 
-  const [sectionState,setSectionState] = useState('curso')
+  const [sectionState,setSectionState] = useState('pre')
   const [dayCourse,setDayCourse] = useState('10 DE ABRIL')
   const [salon,setSalon] = useState('salon1')
 
   return (
     <>
         <section className='w-full flex justify-center items-center gap-5 mb-5 mt-2'>
-            <div>
-              <BtnMenu type="curso" setSectionState={setSectionState} sectionState={sectionState}>Curso para médicos generales</BtnMenu>
-             <h3 className={`mb-4 mt-6 text-center ${sectionState === 'curso' ? 'opacity-1' : 'opacity-0'}`}><b>8 DE ABRIL</b></h3>  
-            </div>
             <div>
               <BtnMenu type="pre" setSectionState={setSectionState} sectionState={sectionState}>Pre-Congreso</BtnMenu>
               <h3 className={`mb-4 mt-6 text-center ${sectionState === 'pre' ? 'opacity-1' : 'opacity-0'}`}><b>9 DE ABRIL</b></h3>
@@ -62,8 +58,7 @@ function App() {
         </section>}
 
         <div className='w-full flex flex-col items-center'>
-        {sectionState === 'curso' && <CursoDoctores /> } 
-
+  
         {sectionState === 'pre' && <PreCongreso /> } 
 
         <div className='w-full flex flex-col items-center'>
