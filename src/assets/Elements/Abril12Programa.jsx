@@ -15,7 +15,7 @@ function Abril12Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
-                  <div className='bg-custom-blue p-5 pb-0 mb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 mb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALA PLENARIA / SALONES A3 y A4</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 mt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Trabajos premiados de residentes </h2></div>
                 
                   <ContainerRows rows={4}>
@@ -42,7 +42,7 @@ function Abril12Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 2 */}
                 {salon === 'salon2' && <>
-                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
+                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN F2</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="09:00 AM - 09:20 AM" doctor="Dr. Eduardo Marín" theme="Virus, vacunas y piel" />

@@ -15,7 +15,7 @@ function Abril10Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 1 */}
                 {salon === 'salon1' && <>
-                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 1</h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALA PLENARIA / SALONES A3 y A4</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Dermatología pediátrica </h2></div>
                   <ContainerRows rows={4}>
                     <RowTable hour="09:00 AM - 09:40 AM" doctor="Dra. Désirée Larenas" theme="Guidamex. Guía mexicana de la dermatitis atópica" />
@@ -61,7 +61,7 @@ function Abril10Programa({setSalon,salon}) {
 
                 {/* Inicia Salon 2 */}
                 {salon === 'salon2' && <>
-                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 2</h2></div>
+                <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN F2</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cosmética</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Miriam Neri" theme="Enzimas recombinantes de nueva generación en dermatología" />
@@ -103,7 +103,7 @@ function Abril10Programa({setSalon,salon}) {
 
                 {/* inicia Salon 3 */}
                 {salon === 'salon3' && <>
-                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>Salón 3</h2></div>
+                  <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN D</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Inmunología</h2></div>
                   <ContainerRows rows={5}>
                     <RowTable hour="09:00 AM - 09:20 AM" doctor="Dra. Alicia Lemini" theme="Dermatitis atópica y su aspecto clínico molecular" />
