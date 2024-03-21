@@ -27,33 +27,30 @@ function Abril10Programa({setSalon,salon}) {
                   <Receso hour="10:40 AM - 11:10 AM" />
                   <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: CILAD</h2></div>
                   <ContainerRows rows={5}>
-                      <RowTable hour="11:10 AM - 11:30 AM" doctor="Dr. José Luis López Estebaranz" theme="FOTOPROTECCIÓN" />
-                      <RowTable hour="11:30 AM - 11:50 AM" doctor="Dr. Diego del Ojo" theme="FOTOPROTECCIÓN" />
-                      <RowTable hour="11:50 AM - 12:10 PM" doctor="Dra. Ivonne Arellano" theme="FOTOPROTECCIÓN" />
-                      <RowTable hour="12:10 PM - 12:30 PM" doctor="" theme="" />
-                      <RowTable hour="12:30 PM - 12:50 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
-
+                      <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Mariel Isa Pimentel" theme="Pitiriasis versicolor. Un diagnóstico, múltiples caras" />
+                      <RowTable hour="11:30 AM - 11:50 AM" doctor="Dr. Diego del Ojo" theme="Enfermedad de Fabry tratada con láser" />
+                      <RowTable hour="11:50 AM - 12:10 PM" doctor="Dr. José Luis López Estebaranz" theme="Psoriasis super respondedores" />
                   </ContainerRows>
 
-                  <Receso hour="12:50 PM - 1:20 PM" />
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: Acné</h2></div>
+            
+                  <ContainerRows rows={1}>
+                      <RowTable hour="12:10 AM - 12:30 AM" doctor="DRA. GABRIELA L. ORTEGA GUTIERREZ" theme="Plática Bayer" />
+                  </ContainerRows>
+
+                  <Receso hour="12:30 PM - 01:00 PM" />
+
+                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: Cosmética</h2></div>
                   <ContainerRows rows={5}>
-                  <RowTable hour="1:20 PM - 1:40 PM" doctor="Dra. Alejandra Rosales" theme="Acné y probióticos" />
-                      <RowTable hour="1:40 PM - 2:00 PM" doctor="Dra. Rebeca Rodríguez" theme="Tratamiento tópico del acné" />
-                      <RowTable hour="2:00 PM - 2:20 PM" doctor="Dra. Gabriela Ortega" theme="Preparación para peelings en acné" />
-                      <RowTable hour="2:20 PM - 2:40 PM" doctor="Dr. Enrique Hernández Pérez" theme="" />
-                      <RowTable hour="2:40 PM - 3:00 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
+                      <RowTable hour="01:00 PM - 01:20 PM" doctor="Dr. Javier Ruiz" theme="Bioestimulantes faciales" />
+                      <RowTable hour="01:20 PM - 01:40 PM" doctor="Dr. Javier Ruiz" theme="Terapia con enzimas para modelado facial" />
+                      <RowTable hour="01:40 PM - 02:00 PM" doctor="Dra. Miriam Neri" theme="Nueva generación de principios activos recombinantes para diversas patologías dermatológicas" />
+                      <RowTable hour="02:00 PM - 02:20 PM" doctor="Dr. José Enrique Hernández Pérez" theme="¿Qué hacer con las ojeras?" />
                   </ContainerRows>
-                  <Receso hour="3:00 PM - 3:30 PM" />
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: Tecnología y Láser</h2></div>
-                  <ContainerRows rows={3}>
-                      <RowTable hour="3:30 PM - 3:50 PM" doctor="Dra. Mirna Toledo Bahena" theme="Láser en pediatría" />
-                      <RowTable hour="3:50 PM - 4:10 PM" doctor="Dra. Silvia Mora" theme="Microneedling no Aislado + RF Bipolar" />
-                      <RowTable hour="4:10 PM - 4:30 PM" doctor="" theme="" />
-                  </ContainerRows>
-                  <Receso hour="4:30 PM - 5:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
+                  <Receso hour="'02:20 PM - 03:00 PM" />
+                
+                  <Receso hour="04:00 PM - 08:30 PM" title="CEREMONIA DE INAUGURACIÓN" />
                   <ContainerRows rows={2}>
-                      <RowTable hour="5:00 PM - 07:50 PM" doctor="" theme="Cóctel de bienvenida Cantabria" />
+                      <RowTable hour="04:00 PM - 06:30 PM" doctor="" theme="Cóctel de bienvenida Cantabria" />
                       <RowTable hour="08:30 PM - 10:00 PM " doctor="" theme="Cena de profesores" />
                   </ContainerRows>
                 </>}
@@ -62,38 +59,40 @@ function Abril10Programa({setSalon,salon}) {
                 {/* Inicia Salon 2 */}
                 {salon === 'salon2' && <>
                 <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN F2</h2></div>
-                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cosmética</h2></div>
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Psoriasis</h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Miriam Neri" theme="Enzimas recombinantes de nueva generación en dermatología" />
-                    <RowTable hour="11:30 AM - 11:50 AM" doctor="Dra. Gabriela Ortega" theme="Peelings de la A a la Z" />
-                    <RowTable hour="11:50 AM - 12:10 PM" doctor="Dr. José Enrique Hernández Pérez" theme="¿Qué hacer con las ojeras?" />
-                    <RowTable hour="12:10 PM - 12:30 PM" doctor="Dr. Javier Ruiz" theme="Bioestimulantes faciales" />
-                    <RowTable hour="12:30 PM - 12:50 PM" doctor="Dr. Javier Ruiz" theme="Terapia con enzimas para modelado facial" />
+                    <RowTable hour="09:00 AM - 09:20 AM" doctor="Dr. Diego Olín Pérez Rojas" theme="Guidamex. Guía mexicana de la dermatitis atópica" />
+                    <RowTable hour="09:20 AM - 10:40 AM" doctor="Dra. Lucia Comellas Kirkerup" theme="LESIONES ELEMENTALES" />
+                    <RowTable hour="09:40 AM - 10:00 AM" doctor="Dr. José Manuel Carrascosa" theme="Comorbilidades en psoriasis infantil" />
+                    <RowTable hour="10:00 AM - 10:20 AM" doctor="Dra. Rosario García Salazar" theme="Lesiones post covid en menores" />
+                    <RowTable hour="10:20 AM - 10:40 AM" doctor="PREGUNTAS Y RESPUESTAS" theme="Lesiones post covid en menores" />
                   </ContainerRows>
           
-                  <Receso hour="12:50 PM - 1:20 PM" />
+                  <Receso hour="10:40 AM - 11:10 AM" />
                   
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
-                  <ContainerRows rows={5}>
-                    <RowTable hour="01:20 PM - 01:40 PM" doctor="Dra. Mariela del Ángel" theme="Respuesta  clínica a tratamiento convencional de pacientes con hidradenitis y eritrasma" />
-                    <RowTable hour="01:40 PM - 02:00 PM" doctor="Dr. Jorge Lauro Moreno González" theme="Escleroterapia: Técnica de aplicación" />
-                    <RowTable hour="02:00 PM - 02:20 PM" doctor="Dra. Helena Vidaurri" theme="Diagnóstico diferencial de eritrodermia neonatal" />
-                    <RowTable hour="02:20 PM - 02:40 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Casos y actualidades de hiperqueratosis circunscrita" />
-                    <RowTable hour="02:40 PM - 03:00 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
+                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Vitiligo</h2></div>
+                  <ContainerRows rows={4}>
+                    <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Yolanda Gilabert" theme="Respuesta  clínica a tratamiento convencional de pacientes con hidradenitis y eritrasma" />
+                    <RowTable hour="11:30 AM - 11:50 AM" doctor="Dr. Gustavo Jiménez Brito" theme="Escleroterapia: Técnica de aplicación" />
+                    <RowTable hour="11:50 AM - 12:10 PM" doctor="Dra. Mariel Isa Pimentel" theme="Diagnóstico diferencial de eritrodermia neonatal" />
+                    <RowTable hour="12:10 PM - 12:30 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
                   </ContainerRows>
 
-                  <Receso hour="03:00 PM - 03:30 PM" />
+                  <Receso hour="12:30 PM - 01:00 PM" />
 
-                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cirugía dermatológica </h2></div>
-                  <ContainerRows rows={3}>
-                    <RowTable hour="03:30 PM - 03:50 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Cirugía reconstructiva compleja de oreja" />
-                    <RowTable hour="03:50 PM - 04:10 PM" doctor="Dr. Juan Antonio Vázquez Velo" theme="Hidradenitis supurativa, abordaje quirúrgico" />
-                    <RowTable hour="04:10 PM - 04:30 PM" doctor="Dr. José Enrique Hernández Pérez" theme="Liposowing: Efectividad en transplante de grasa" /> 
+                  <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas </h2></div>
+                  <ContainerRows rows={4}>
+                    <RowTable hour="01:00 PM - 01:20 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Casos y actualidades de hiperqueratosis circunscrita" />
+                    <RowTable hour="01:20 PM - 01:40 PM" doctor="Dra. Rosa María Wong Chew" theme="Infecciones por virus herpes, ¿Qué afectan a la piel?" />
+                    <RowTable hour="01:40 PM - 02:00 PM" doctor="Dra. Guadalupe Silvia Mora Ruiz" theme="Microneedling no Aislado + RF Bipolar" /> 
+                    <RowTable hour="02:00 PM - 02:20 PM" doctor="Dra. Helena Vidaurri De La Cruz" theme="Diagnóstico diferencial de eritrodermia neonatal" /> 
                   </ContainerRows>
 
-                  <Receso hour="04:30 PM - 05:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
+                  <Receso hour="02:20 PM - 03:00 PM"  />
+                  <Receso hour="03:00 PM - 04:00 PM"  title="CEREMONIA DE INAUGURACIÓN" />
+
                   <ContainerRows rows={2}>
-                    <RowTable hour="05:00 PM - 07:50 PM" doctor="" theme="Cóctel de bienvenida Cantabria" />
+                    <RowTable hour="04:00 PM - 06:30 PM" doctor="" theme="Cóctel de bienvenida Cantabria" />
                     <RowTable hour="08:30 PM - 10:00 PM" doctor="" theme="Cena de profesores" />
                   </ContainerRows>
                 
@@ -101,7 +100,7 @@ function Abril10Programa({setSalon,salon}) {
                 </>}
                 {/* Termina Salon 2 */}
 
-                {/* inicia Salon 3 */}
+                {/* inicia Salon 3 D */}
                 {salon === 'salon3' && <>
                   <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN D</h2></div>
                   <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Inmunología</h2></div>
@@ -115,19 +114,28 @@ function Abril10Programa({setSalon,salon}) {
           
                   <Receso hour="10:40 AM - 11:10 AM" />
 
+                  <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Cirugía dermatológica y Tecnología</h2></div>
+                  <ContainerRows rows={5}>
+                    <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Mirna Toledo Bahena" theme="Láser en pediatría" />
+                    <RowTable hour="11:30 AM - 11:50 AM" doctor="Dr. Juan Antonio Vázquez Melo" theme="Hidradenitis supurativa, abordaje quirúrgico" />
+                    <RowTable hour="11:50 AM - 12:10 PM" doctor="Dr. José Enrique Hernández Pérez" theme="Liposowing: Efectividad en transplante de grasa" />
+                    <RowTable hour="12:10 PM - 12:30 PM" doctor="Dr. Miguel Ángel Cardona Hernández" theme="Cirugía reconstructiva compleja de oreja" />
+                  </ContainerRows>
+          
+                  <Receso hour="12:30 PM - 01:00 PM" />
+
                   <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Micología. En colaboración con la Asociación Mexicana de Micología Médica</h2></div>
                   <ContainerRows rows={5}>
-                    <RowTable hour="11:10 AM - 11:30 AM" doctor="Dr. Alexandro Bonifaz" theme="Tiña de la cabeza en ancianos" />
-                    <RowTable hour="11:30 AM - 11:50 AM" doctor="Dra. Maricarmen Padilla" theme="Síndrome dos pies, una mano, en el Centro Dermatológico Pascua" />
-                    <RowTable hour="11:50 AM - 12:10 PM" doctor="Dra. Mariel Isa Pimentel" theme="Actualización en onicomicosis" />
-                    <RowTable hour="12:10 PM - 12:30 PM" doctor="M. Javier Araiza Santibáñez" theme="Tiña gladiatorum y la importancia de los portadores asintomáticos" />
-                    <RowTable hour="12:30 PM - 12:50 PM" doctor="" theme="PREGUNTAS Y RESPUESTAS" />
+                    <RowTable hour="01:00 PM - 01:20 PM" doctor="Dr. Alexandro Bonifaz" theme="Tiña de la cabeza en ancianos" />
+                    <RowTable hour="01:20 PM - 01:40 PM" doctor="Dra. Maricarmen Padilla" theme="Síndrome dos pies, una mano, en el Centro Dermatológico Pascua" />
+                    <RowTable hour="01:40 PM - 02:00 PM" doctor="M. Javier Araiza Santibáñez" theme="Tiña gladiatorum y la importancia de los portadores asintomáticos" />
+                    <RowTable hour="02:00 PM - 02:20 PM" doctor="Dra. Mariel Isa Pimentel" theme="Actualización en onicomicosis" />
                   </ContainerRows>
 
-                  <Receso hour="12:50 PM - 01:20 PM" />
-                  <Receso hour="04:30 PM - 05:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
+                  <Receso hour="02:20 PM - 03:00 PM" />
+                  <Receso hour="03:00 PM - 04:00 PM" title="CEREMONIA DE INAUGURACIÓN" />
                   <ContainerRows rows={2}>
-                    <RowTable hour="05:00 PM - 07:50 PM" doctor="" theme="Bienvenida " />
+                    <RowTable hour="04:00 PM - 06:30 PM" doctor="" theme="Bienvenida " />
                     <RowTable hour="08:30 PM - 10:00 PM" doctor="" theme="Cena de profesores" />
                   </ContainerRows>
                   
