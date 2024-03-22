@@ -16,8 +16,9 @@ function Abril12Programa({ setSalon, salon }) {
 
       {/* Inicia Salon 1 */}
       {salon === 'salon1' && <>
-        <div className='bg-custom-blue p-5 pb-0 mb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALA PLENARIA / SALONES A3 y A4</h2></div>
-        <div className='bg-custom-blue p-5 pt-0 mt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
+        <div className='bg-custom-blue p-5 pb-0 mb-0 w-full md:w-3/5 mb-4 pb-4'><h2 className='text-white text-center'>SALA PLENARIA / SALONES A3 y A4</h2></div>
+        <div className='bg-custom-blue p-5 pt-0 mt-0 w-full md:w-3/5 mt-4'><h2 className='text-white text-center'>MÓDULO: Misceláneas</h2></div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DRA. MIRIAM PUEBLA MIRANDA</h2></div>
 
         <ContainerRows rows={4}>
           <RowTable hour="09:00 AM - 09:20 AM" doctor="Dr. Eduardo Marín Hernández" theme="Virus, vacunas y piel" />
@@ -28,6 +29,7 @@ function Abril12Programa({ setSalon, salon }) {
 
         <Receso hour="10:20 PM - 10:50 PM" />
         <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: Fotoprotección </h2></div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DR. FERMÍN JURADO</h2></div>
         <ContainerRows rows={4}>
           <RowTable hour="10:50 AM - 11:10 AM" doctor="Dr. Fermín Jurado" theme="Fotoprotección sistémica basada en la evidencia" />
           <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Fadua Besil Eguia" theme="Fotoprotección tópica" />
@@ -38,6 +40,8 @@ function Abril12Programa({ setSalon, salon }) {
 
         <Receso hour="12:10 PM - 12:40 PM" />
         <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: Pelo y uñas</h2></div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DR. ARMANDO MEDINA BOJÓRQUEZ</h2></div>
+        
         <ContainerRows rows={4}>
           <RowTable hour="12:40 PM - 01:00 PM" doctor="Dr. Daniel Asz" theme="Alopecias por presión" />
           <RowTable hour="01:00 PM - 01:20 PM" doctor="Dr. Carlos Barrera Ochoa" theme="Do’s and don’t del minoxidil oral." />
@@ -57,10 +61,11 @@ function Abril12Programa({ setSalon, salon }) {
 
       {/* Inicia Salon 2 */}
       {salon === 'salon2' && <>
-        <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN F2</h2></div>
-        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'>
+        <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5 mb-4 pb-4'><h2 className='text-white text-center'>SALÓN F2</h2></div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mt-4'>
           <h2 className='text-white text-center'>MÓDULO: Foro de residentes</h2>
         </div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DRA. ALEJANDRA ROSALES BARBOSA</h2></div>
         <ContainerRows>
           <RowTable hour="08:00 AM - 09:00 AM" doctor="Dra. Esperanza Welsh" theme="Suero como un aliado en la práctica dermatológica para la restauración y renovación cutánea." />
           <RowTable hour="09:00 AM - 09:10 AM" doctor="Dra. Andrea Merino Ruisánchez" theme="Diferencias en la densidad malassezia spp. En pacientes con rosácea comparado con sujetos sanos y su correlación con la gravedad." />
@@ -78,6 +83,7 @@ function Abril12Programa({ setSalon, salon }) {
         <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'>
           <h2 className='text-white text-center'>MÓDULO: Trabajos premiados de residentes</h2>
         </div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DRA. GABRIELA L. ORTEGA GUTIERREZ</h2></div>
         <ContainerRows>
           <RowTable hour="10:50 AM - 11:10 AM" doctor="Dra. Ruth María Amanda Márquez Muciño" theme="Lesión verrugosa lineal en paciente pediátrico" />
           <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Citlalli Fernanda Pérez López" theme="Erupción papuloescamosa asociada a Card14: un desafío diagnóstico y terapéutico en dermatología" />
@@ -90,6 +96,7 @@ function Abril12Programa({ setSalon, salon }) {
         <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'>
           <h2 className='text-white text-center'>MÓDULO: Casos clínicos de difícil diagnóstico (residentes)</h2>
         </div>
+        <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DRA. ALICIA LEMINI LÓPEZ</h2></div>
         <ContainerRows>
           <RowTable hour="12:40 PM - 01:00 PM" doctor="Dra. María José Arroyo López" theme="Abordaje diagnóstico de paniculitis" />
           <RowTable hour="01:00 PM - 01:20 PM" doctor="Dra. Valeria Ornelas León" theme="Reacciones dermatológicas asociadas a los nuevos inhibidores tirosin cinasa" />
@@ -109,10 +116,11 @@ function Abril12Programa({ setSalon, salon }) {
 
       {/* Inicia Salon 3 */}
       {salon === 'salon3' && <>
-      <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5'><h2 className='text-white text-center'>SALÓN D</h2></div>
-      <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'>
+      <div className='bg-custom-blue p-5 pb-0 w-full md:w-3/5 mb-4 pb-4'><h2 className='text-white text-center'>SALÓN D</h2></div>
+      <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mt-4'>
         <h2 className='text-white text-center'>MÓDULO: Cosmética</h2>
       </div>
+      <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DRA. GABRIELA L. ORTEGA GUTIERREZ</h2></div>
       <ContainerRows>
         <RowTable hour="09:00 AM - 09:20 AM" doctor="Dra. Gabriela L. Ortega Gutierrez" theme="Peelings de la A a la Z" />
         <RowTable hour="09:20 AM - 09:40 AM" doctor="Dr. Enrique Hernández Pérez" theme="El vuelo de la cirugía cosmética" />
@@ -122,9 +130,10 @@ function Abril12Programa({ setSalon, salon }) {
 
       <Receso hour="10:20 AM - 10:50 AM" />
 
-      <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'>
+      <div className='bg-custom-blue p-5 w-full md:w-3/5'>
         <h2 className='text-white text-center'>MÓDULO: Misceláneas</h2>
       </div>
+      <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DRA. SUSANA CANALIZO ALMEIDA</h2></div>
       <ContainerRows>
         <RowTable hour="10:50 AM - 11:10 AM" doctor="Dra. Mariela del Ángel" theme="Respuesta clínica a tratamiento convencional de pacientes con hidradenitis y eritrasma" />
         <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Liliana Godinez" theme="Revisiones sobre calidad de vida y enfermedades de la piel con enfoque especial en psoriasis y dermatitis atópica. (Zoom)" />
@@ -135,9 +144,10 @@ function Abril12Programa({ setSalon, salon }) {
 
       <Receso hour="12:10 PM - 12:40 PM" />
 
-      <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'>
+      <div className='bg-custom-blue p-5 w-full md:w-3/5'>
         <h2 className='text-white text-center'>MÓDULO: Acné</h2>
       </div>
+      <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DR. ENRIQUE HERNÁNDEZ PÉREZ</h2></div>
       <ContainerRows>
         <RowTable hour="12:40 PM - 01:00 PM" doctor="Dra. Alejandra Rosales Barbosa" theme="Acné y probióticos" />
         <RowTable hour="01:00 PM - 01:20 PM" doctor="Dra. Rebeca Rodríguez Cabral" theme="Tratamiento tópico del acné" />
