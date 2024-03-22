@@ -7,7 +7,7 @@ function Abril11Programa({setSalon,salon}) {
   return (
     <>
      <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Centro de convenciones, Expo Santa Fé</h2></div>
-              <div className='flex w-full justify-center gap-10'>
+              <div className='flex flex-wrap w-full justify-center gap-4'>
                 <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon1' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon1')}><b>Sala plenaria</b></h3>
                 <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon2' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon2')}><b>Salón F2</b></h3>
                 <h3 className={`mb-4 mt-6 text-center cursor-pointer ${salon === 'salon3' && 'text-blue-secondary'}`} onClick={()=>setSalon('salon3')}><b>Salón D</b></h3>
