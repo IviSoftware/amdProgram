@@ -78,7 +78,7 @@ function Abril10Programa({ setSalon, salon }) {
 
         <Receso hour="10:40 AM - 11:10 AM" />
 
-        <div className='bg-custom-blue p-5 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>MÓDULO: Vitiligo</h2></div>
+        <div className='bg-custom-blue p-5 w-full md:w-3/5'><h2 className='text-white text-center'>MÓDULO: Vitiligo</h2></div>
         <div className='bg-custom-blue p-5 pt-0 w-full md:w-3/5 mb-10'><h2 className='text-white text-center'>Coordinador: DR. GUSTAVO JIMÉNEZ BRITO</h2></div>
         <ContainerRows rows={4}>
           <RowTable hour="11:10 AM - 11:30 AM" doctor="Dra. Yolanda Gilabert" theme="Terapia fotodinámica más allá del cáncer de piel " />
