@@ -53,7 +53,7 @@ function Abril10Programa({ setSalon, salon }) {
           <RowTable hour="01:40 PM - 02:00 PM" doctor="Dra. Miriam Neri Carmona" theme="Nueva generación de principios activos recombinantes para diversas patologías dermatológicas" />
           <RowTable hour="02:00 PM - 02:20 PM" doctor="Dr. José Enrique Hernández Pérez" theme="¿Qué hacer con las ojeras?" />
         </ContainerRows>
-        <Receso hour="'02:20 PM - 03:00 PM" />
+        <Receso hour="02:20 PM - 03:00 PM" />
 
         <Receso hour="04:00 PM - 08:30 PM" title="CEREMONIA DE INAUGURACIÓN" />
         <ContainerRows rows={2}>
